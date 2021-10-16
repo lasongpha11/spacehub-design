@@ -1,0 +1,856 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+body {
+    padding: 0px 50px;
+    
+}
+nav {
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* tren phai duoi trai */
+    padding: 20px 0;
+    /* p4-15-4-10 */
+}
+.dflex {
+    display: flex;
+    align-items: center;
+}
+.item {
+    padding: 10px 10px;
+}
+
+/* question: can giữa icon */
+.item1 {
+    /* padding: 10px 10px; */
+    background-color: #F9C41F;
+    width: 80px;
+    height: 35px;
+    border-radius: 100rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item1 img {
+    padding: 5px;
+}
+/* .item:hover {
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin: -1px;
+} */
+.logo {
+    text-align: center;
+    margin: 1px;
+    margin-bottom: -5px;
+    padding: 6px 8px 0 0;
+    height: 42px;
+}
+/* question */
+.subnavigation a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+    /* padding-bottom: 10px;
+    margin: 10px; */
+    /* tdn */
+}
+/* question */
+/* a:hover {
+    border-bottom: 1px solid #F9C41F;
+    margin: -1px;
+    border-radius: 3px;
+    
+} */
+/* a span {
+    font-size: 14px;
+    margin-left: -10px;
+} */
+p {
+    font-size: 12px;
+    line-height: 10px; 
+    /* lh15 */
+}
+.item i {
+    padding: 0 5px;
+}
+
+nav input, .Recruitment input, .helpcenter .find .box input {
+    width: 300px;
+    padding: 10px;
+    padding-left: 60px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #000;
+    border-radius: 100rem;
+    box-shadow: 0 0 5px 0 rgb(59, 59, 58);
+    /* position: relative; */
+}
+.Recruitment input, .helpcenter .find .box input {
+    padding-left: 20px;
+}
+
+nav .search, .Recruitment .search, .helpcenter .find .box .search {
+    width: 36px;
+    height: 36px;
+    border-radius: 100rem;
+    background-color: #F9C41F;
+    margin-left: -45px;
+}
+/* question: center icon */
+nav .all {
+    position: absolute;
+    background:none;
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+img.sortdown {
+    margin:4px;
+}
+
+nav button, .Recruitment button, .helpcenter .find .box button {
+    padding: 10px 10px;
+    color: #000;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+
+/* .box:hover {
+    border: 4px solid rgb(247,155,80);
+    box-shadow: 0 0 3px 0 rgb(247,155,80);
+} */
+.subnavigation {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+}
+.submenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul li {
+    list-style: none;
+    font-weight: 50;
+    /* fw50 */
+    margin-right: 16px;
+    padding-bottom: 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+    /* fsz14 */
+} 
+.subnavigation ul li.active {
+    border-bottom: 2px solid #F9C41F;
+}
+.subnavigation ul li:hover {
+    border-bottom: 2px solid #F9C41F;
+}
+/*
+nav .submenu i {
+    font-size: 16px;
+}
+.li {
+    margin: -5px;
+}
+.bg {
+    position:relative;
+    padding: 6px 6px;
+    margin: -5px 0;
+    margin-right: 10px;
+     background-color: rgb(247,155,80);
+     mr10 */
+   
+    /* bgc 
+}*/
+/* content */
+.breadcumb {
+    font-weight: 600;
+    padding: 10px 0 20px 0;
+}
+.breadcumb a {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.breadcumb a.active {
+    color: #F9C41F;
+}
+.breadcumb a:hover {
+    color: #F9C41F;
+}
+.breadcumb span {
+    margin: 0 15px;
+}
+
+/* home */
+/* .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url(../image/main/Rectangle1099.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+} */
+.home{
+
+    background: url(../image/main/Rectangle1099.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    position: relative;
+    
+}
+.home .content2 {
+    padding: 9rem;
+} 
+.home .content{
+    width: 451px;
+    background-color: #F9C41F;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin: 0 0px -78px 102px;
+    padding: 22px;
+}
+
+.home .content h3{
+    color:var(--black);
+    font-size: 32px;
+}
+
+.home .content h3 span{
+    color:var(--orange);
+}
+
+.home .content p{
+    color:var(--light-color);
+    font-size: 20px;
+    padding:1rem 0;
+    line-height: 1.8;
+
+    border-bottom: 3px solid #fff;
+}
+.heading{
+    font-size: 32px;
+    padding-top: 1rem;
+}
+.heading-team {
+    padding: 1rem 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* end home */
+.description .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10rem 0 0 0;
+}
+.description .row .info{
+    flex:1 1 48rem;
+    padding: 2rem 0rem;
+    text-align: center;
+}
+.description .row .info:last-child{
+    padding-left: 6rem;
+}
+.description .row .info h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.description .row .info p {
+    text-align: left;
+    padding: 20px 0;
+    font-size: 18px;
+    color: #4E4E4E;
+    line-height: 25px;
+}
+/* board */
+/* why us */
+.why .box-container, .board .box-container, .Recruitment .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 1rem;
+}
+.board .box-container {
+    text-align: center;
+}
+
+.why .box-container .box, .board .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 1rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+/* question: about design and with monitor */
+.Recruitment .box-container .box {
+    padding-left: 0;
+    
+}
+.Recruitment .box-container .box img {
+    width: 523px;
+}
+.board .box-container .box {
+    width: 284px;
+    margin-right: 50px;
+    border-bottom: 5px solid #F9C41F;
+}
+.board .box-container .box:after {
+    margin-right: 0;
+}
+.board .box-container span {
+    /* background-color: red; */
+    padding: .5rem 2rem;
+    border-right: 3px solid #F9C41F;
+    border-left: 3px solid #F9C41F;
+    font-size: 14px; 
+    font-weight: bold;
+    letter-spacing: 7px;
+    color: #7A7A7A;
+    
+}
+/* question - upload not working */
+.why .box-container .box img{
+    background-color: #F9C41F;
+    /* color: #F9C41F; */
+    position: relative;
+}
+
+.why .box-container .box h3, .board .box-container .box h3, .Recruitment .box-container .box h3{
+    font-size: 20px;
+    padding-top: 1.5rem;
+}
+
+/* question create  */
+.why .box-container .box .vien{
+    width: 72px;
+    height: 4px;
+    background-color: #F9C41F;
+    margin: 1rem 0rem .1rem 0rem;
+}
+.why .box-container .box p, .board .box-container .box p, .Recruitment .box-container .box p{
+    font-size: 18px;
+    color:#4E4E4E;
+    padding: 1rem 0;
+    line-height: 1.5rem;
+}
+.board .box-container .box .cricle {
+    width: 150px;
+    height: 150px;
+    border-radius: 100rem;
+    background-color: #F9C41F;
+    position: absolute;
+    z-index: -100;
+    right: 25px;
+    bottom: 25px;
+}
+/* question font-size: rem - html */
+
+/* Recruitment */
+.Recruitment .searchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../image/main/Rectangle1099.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    margin-top: 3rem;
+} 
+.Recruitment .btn {
+    text-align: center;
+    padding: 2rem;
+}
+.Recruitment .btn button {
+    width: 195px;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.Recruitment .btn button:hover {
+    background-color: #F9C41F;
+    margin: -1px;
+}
+/* .Recruitment .searchBox */
+/* mess */
+/* fix body 50px -> 0px */
+.mess {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    background: #F6F6F6;
+    position: fixed;
+    bottom: 3rem;
+    right: 0rem;
+    border: 2px solid #D3D3D3;
+    border-radius: 15px 15px 0 0;
+}
+.mess .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mess .info>* {
+    padding: 1rem 1rem;
+    position: relative;
+}
+.mess .info .circle img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100rem;
+    
+    /* background-color: red; */
+}
+.mess .info .circle .circle1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100rem;
+    background-color: #0CDBCE;
+    position: absolute;
+    right: 16px;
+    bottom: 22px;
+}
+/* end mess */
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* tren phai duoi trai */
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #F6F6F6;
+    /* margin-top: 4rem; */
+}
+footer .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .item img {
+    padding: 0 1rem;
+}
+footer .left .item, footer .right .item {
+    color: #222222;
+    font-size: 16px;
+} 
+
+
+
+/* quy chuan? font-size: dau` mac dinh 16px - 
+roi` su? dung rem toi cuoi 
+khi thay doi font-size se~ thay doi toan` bo
+
+wrap lai toan` bo min-height cho footer
+*/
+/* Aboutus */
+.navbar-right, .navbar-right-policy {
+    display: flex;
+}
+.navbar-right ul li  {
+    width: 228px;
+    height: 64px;
+    margin-right: 50px;
+}
+.navbar-right ul li a, .navbar-right-policy ul li a {
+    display: block;
+    padding:1rem;
+    margin:1.5rem 0;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar-right-policy ul li {
+    width: 228px;
+    height: 42px;
+    margin-right: 40px;
+}
+
+.navbar-right-policy ul li a {
+    font-size: 1rem;
+    color: #7A7A7A;
+    border-radius: 0;
+    /* margin: 1rem 0; */
+}
+.navbar-right-policy ul li a.active {
+    border-left: 1px solid #F9C41F ;
+    border-right: 1px solid #F9C41F ;
+    color: #222;
+}
+.navbar-right-policy ul li a:hover {
+    border-left: 1px solid #F9C41F ;
+    border-right: 1px solid #F9C41F ;
+    color: #222;
+}
+.navbar-right ul li.active {
+    background:#F9C41F;
+    border-radius: 25px; 
+}
+.navbar-right ul li:hover { 
+    background:#F9C41F;
+    border-radius: 25px;    
+}
+.navbar-right .getting, .navbar-right-policy .getting {
+    padding-top: 1rem;
+}
+.navbar-right-policy .getting .content {
+    padding-top: 2rem;
+}
+.navbar-right .getting p, .navbar-right-policy .getting .content p, .navbar-right-policy .content2 p {
+    text-align: left;
+    padding: 1rem 0;
+    font-size: 18px;
+    color: #4E4E4E;
+    line-height: 25px;
+}
+/* question code after duong` vien  */
+.navbar-right .getting p::after {
+
+}
+.find {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.find .box h3 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 1.5rem;
+}
+.find .box p {
+    font-size: 18px;
+    color:#4E4E4E;
+    padding: 1rem 0;
+    line-height: 1.5rem;
+}
+.helpcenter .find .box input {
+    width: 591px;
+    height: 48px;
+}
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.heading1 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 1rem;
+    color: #F9BD06;
+}
+
+/* payment */
+.payment {
+    display: grid;
+    width: auto;
+    background-color: #fff;
+    /* border-radius: 10px; */
+    /* box-shadow: 5px 5px 30px rgba(0, 0, 0, .2); */
+}
+.payment .box {
+    padding: 30px 0px;
+    background: #fff;
+    /* border-radius: 10px; */
+}
+/* question img zalo */
+.payment .box label {
+    display: flex;
+    height: 81px;
+    width: 50%;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    margin: 10px 0;
+    padding-left: 20px;
+    cursor: default;
+    transition: all .3 ease;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.payment .box label img {
+    position: absolute;
+    right: 30px;
+}
+
+
+#option-1:checked ~ .option-1,
+#option-2:checked ~ .option-2,
+#option-3:checked ~ .option-3,
+#option-4:checked ~ .option-4 {
+
+    border-color: #F9BD06;
+}
+.payment .box label .dot {
+    height: 24px;
+    width: 24px;
+    border: 2px solid #F9C41F;
+    border-radius: 50%;
+    position: relative;
+    transition: all .3s ease;
+}
+
+#option-1:checked ~ .option-1 .dot,
+#option-2:checked ~ .option-2 .dot,
+#option-3:checked ~ .option-3 .dot,
+#option-4:checked ~ .option-4 .dot {
+    background: #fff;
+    
+}
+.payment .box label .dot::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(2);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot::before,
+#option-3:checked ~ .option-3 .dot::before,
+#option-4:checked ~ .option-4 .dot::before {
+    background: #F9BD06;
+    transform: translate(-50%, -50%) scale(1);
+}
+.payment .box label .text {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 10px;
+    transition: color .3s ease;
+}
+.payment .box label .text .text1 p {
+    padding-top: .5rem ;
+    color: #A7A7A7;
+    font-size: 16px;
+}
+#option-1:checked ~ .option-1 .text,
+#option-2:checked ~ .option-2 .text,
+#option-3:checked ~ .option-3 .text,
+#option-4:checked ~ .option-4 .text {
+    color: #fff;
+}
+.payment .box input[type="radio"] {
+    display: none;
+}
+
+.thanhtoan {
+    width: 331px;
+    height: 76px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #F9C41F;
+    border-radius: 15px;
+    border: none;
+}
+.follow, .chat {
+    width: 282px;
+    height: 48px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 2px solid #F9C41F;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+.chat {
+    background-color: #F9C41F;
+}
+.chat p {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/* profile */
+
+.navbar-right-profile {
+    display: flex;
+  
+}
+.navbar-right-profile .profile {
+    padding: 1.5rem 0;
+    padding-right: 5rem;
+}
+.career {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+.career p {
+    border-right: 1px solid #7A7A7A;
+    margin: 1rem 0;
+    margin-right: 1rem;
+    padding-right: .5rem;
+}
+.career p:last-child {
+    border-right: none;
+    color: #F9C41F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.info-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.info-content p{
+    padding-left: .5rem;
+    font-size: 1rem;
+    color: #7A7A7A;
+}
+.info-content .right{
+    padding: 1rem 0;
+    padding-left: 5rem;
+    font-style: 1rem;
+    color: #222;
+    font-weight: bold;
+}
+
+.info-content .right img{
+    padding-right: 1rem;
+}
+
+.getting-profile .team .team-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.getting-profile .team .team-text p {
+    color: #7A7A7A;
+    padding: .5rem 0;
+    padding-left: 1rem;
+}
+.getting-profile .team-content {
+    padding-bottom: 5rem;
+}
+.getting-profile .team-content img{
+    padding-bottom: 1rem;
+}
+.getting-profile .team-content p{   
+    padding: .5rem 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7A7A7A;
+}
+.team-chat {
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.team-chat .team-chat-box {
+    width: 384px;
+    margin-right: 20rem;
+    margin-bottom: 3rem;
+}
+.team-chat .team-chat-box .div1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    border-bottom: 1px solid #E9E9E9;
+}
+.team-chat .team-chat-box img {
+    margin-right: 1rem;
+}
+.team-chat-box .div1 .cricle img {
+    width: 86px;
+    height: 86px;
+    border-radius: 100rem;
+}
+.team-chat-box .chat{
+    background-color: #fff;
+    transition: all .3s ease;
+}
+.team-chat-box .chat:hover{
+    background-color: #F9BD06;
+}
+.team-chat-box .chat p {
+    padding: 0;
+}
+/* question: min-height: 100vh */
+.pagination {
+    padding-bottom: 5rem;
+}
+.pagination ul {
+    display: flex;
+    padding: 8px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.pagination ul li {
+    
+    list-style: none;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.pagination ul li.numb {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin: 0 3px;
+}
+.pagination ul li .dots {
+    font-size: 22px;   
+    cursor: default;
+}
+.pagination ul li.btn {
+    border: 1px solid #E9E9E9;
+    width: 45px;
+    height: 45px;
+    padding: 0 20px;
+    border-radius: 50%;
+}
+.pagination ul li.active,
+.pagination ul li.numb:hover,
+.pagination ul li.btn:hover {
+    color: #F9BD06;
+    background-color: #222;
+}
